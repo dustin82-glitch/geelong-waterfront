@@ -3,118 +3,62 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Geelong Waterfront – Sailing, Events & Things to Do</title>
-<meta name="description" content="Discover the Geelong Waterfront: sailing on Corio Bay, events, videos and the best things to do.">
-<style>
-:root{--navy:#0b2a4a;--sea:#0e7fa8;--sand:#f6efe2;--coral:#ff6b4a;--ink:#16222e}
-*{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
-body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);line-height:1.6}
-header{position:fixed;inset:0 0 auto 0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:.8rem 5%;background:rgba(11,42,74,.92);color:#fff;flex-wrap:wrap;gap:.5rem}
-header strong{font-size:1.2rem}
-nav a{margin-left:1.2rem;text-decoration:none;font-weight:500;color:#fff}
-nav a:hover{color:var(--coral)}
-.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:6rem 8% 3rem;color:#fff;
-background:linear-gradient(rgba(11,42,74,.35),rgba(11,42,74,.75)),linear-gradient(180deg,#5ec3e8 0%,#0e7fa8 55%,#0b2a4a 100%)}
-.hero h1{font-size:clamp(2.4rem,7vw,5rem);line-height:1.1;max-width:14ch}
-.hero p{font-size:1.25rem;max-width:36rem;margin:1rem 0 2rem}
-.btn{display:inline-block;background:var(--coral);color:#fff;padding:.8rem 1.6rem;border-radius:999px;text-decoration:none;font-weight:700}
-.sails{font-size:4rem;margin-bottom:1rem}
-section{padding:4.5rem 8%}
-section h2{font-size:2rem;color:var(--navy);margin-bottom:.5rem}
-.lead{max-width:44rem;margin-bottom:2rem}
-.alt{background:var(--sand)}
-.grid{display:grid;gap:1.4rem;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
-.card{background:#fff;border-radius:14px;padding:1.5rem;box-shadow:0 4px 14px rgba(0,0,0,.08)}
-.card .ic{font-size:2rem}
-.card h3{margin:.4rem 0;color:var(--sea)}
-.video{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 14px rgba(0,0,0,.1)}
-.video iframe,.video iframe,.video video{width:100%;aspect-ratio:16/9;display:block;background:#000;border:0}
-.video .thumb{aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;text-decoration:none;color:#fff;font-size:3.5rem;
-background:linear-gradient(135deg,var(--navy),var(--sea))}
-.video .thumb:hover{filter:brightness(1.15)}
-.video .t{padding:1rem}
-.video h3{color:var(--navy);font-size:1.05rem}
-.tag{display:inline-block;background:var(--sand);padding:.1rem .7rem;border-radius:999px;font-size:.8rem;margin-top:.3rem}
-.cal li{list-style:none;padding:.9rem 0;border-bottom:1px solid #ddd;display:flex;gap:1.2rem}
-.cal b{min-width:9rem;color:var(--coral)}
-footer{background:var(--navy);color:#cfe3f1;padding:2.5rem 8%;text-align:center}
-footer a{color:#fff}
-</style>
+<title>Sailing, Events &amp; Things to Do | Geelong Waterfront</title>
+<meta name="description" content="Your guide to the Geelong Waterfront: sailing on Corio Bay, club calendars, event videos and the best things to do.">
+<meta name="theme-color" content="#071e3a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 3v19H6z' fill='%230e86b4'/%3E%3Cpath d='M18 8v14h8z' fill='%23ff6b4a'/%3E%3Cpath d='M3 24h26l-4 5H7z' fill='%23071e3a'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<header>
-  <strong>⛵ Geelong Waterfront</strong>
-  <nav><a href="#sailing">Sailing</a><a href="#videos">Videos</a><a href="#events">Events</a><a href="#todo">Things to Do</a><a href="#visit">Visit</a></nav>
-</header>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap bar">
+<a class="brand" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3v19H6z" fill="#5ed0e6"/><path d="M18 8v14h8z" fill="#fff"/><path d="M3 24h26l-4 5H7z" fill="#ff6b4a"/></svg><span>Geelong Waterfront<small>Corio Bay · Victoria</small></span></a>
+<button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span></button>
+<nav class="nav" id="nav" aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="sailing.html">Sailing</a><a href="clubs.html">Clubs &amp; Calendars</a><a href="videos.html">Videos</a><a href="events.html">Events</a><a href="explore.html">Things to Do</a></nav>
+</div></header>
+<main id="main">
 
 <div class="hero">
-  <div class="sails">⛵</div>
-  <h1>Sail the Geelong Waterfront</h1>
-  <p>Sparkling Corio Bay, a lively promenade and one of Victoria's best sailing destinations — all minutes from the city centre.</p>
-  <div><a class="btn" href="#videos">Watch the action</a></div>
+<svg class="boat" viewBox="0 0 200 200" aria-hidden="true"><path d="M98 20v120H30z" fill="#fff"/><path d="M106 45v95h62z" fill="#ffd9cf"/><path d="M96 14h6v140h-6z" fill="#0b2f57"/><path d="M12 150h176l-26 32H40z" fill="#ff6b4a"/></svg>
+<div class="wrap"><span class="eyebrow">Corio Bay · Geelong</span><h1>Sail the Geelong Waterfront</h1>
+<p>Sheltered water, reliable breezes and one of Australia's great sailing calendars, minutes from the city centre.</p>
+<div class="btns"><a class="btn p" href="clubs.html">Sailing calendars</a><a class="btn g" href="videos.html">Watch videos</a></div></div>
+<svg class="wave" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path fill="#fff" d="M0 60C240 100 480 10 720 45s480 50 720 5V100H0z"/></svg>
 </div>
 
-<section id="sailing">
-  <h2>Sailing on Corio Bay</h2>
-  <p class="lead">Geelong is a sailing city. Sheltered waters, steady breezes and a calendar full of regattas make Corio Bay a favourite for beginners and racers alike.</p>
-  <div class="grid">
-    <div class="card"><div class="ic">🏁</div><h3>Royal Geelong Yacht Club</h3><p>One of Australia's oldest yacht clubs, running weekly racing and major regattas from Geelong's waterfront.</p></div>
-    <div class="card"><div class="ic">🎓</div><h3>Learn to Sail</h3><p>Local clubs and sailing schools offer taster days and courses for kids and adults.</p></div>
-    <div class="card"><div class="ic">🚤</div><h3>Marinas &amp; Moorings</h3><p>Berths, ramps and boat hire close to the Esplanade make it easy to get out on the water.</p></div>
-    <div class="card"><div class="ic">🌅</div><h3>Watch from Shore</h3><p>Grab a coffee on the promenade and watch spinnakers fill as fleets race across the bay.</p></div>
-  </div>
-</section>
+<section><div class="wrap">
+<h2 class="reveal">A city built around the bay</h2>
+<p class="lead reveal">From Saturday club racing to the Festival of Sails, the waterfront is where Geelong comes alive.</p>
+<div class="grid">
+<div class="card reveal"><div class="ic">⛵</div><h3>Sailing</h3><p>Racing, learn-to-sail and cruising on Corio Bay.</p><div class="links"><a class="chip" href="sailing.html">Explore sailing</a></div></div>
+<div class="card reveal"><div class="ic">📅</div><h3>Club calendars</h3><p>Royal Geelong Yacht Club, Western Beach Boat Club, trailer sailors and more.</p><div class="links"><a class="chip" href="clubs.html">See all clubs</a></div></div>
+<div class="card reveal"><div class="ic">🎬</div><h3>Videos</h3><p>Regattas and waterfront scenes, embedded.</p><div class="links"><a class="chip" href="videos.html">Watch now</a></div></div>
+<div class="card reveal"><div class="ic">🎉</div><h3>Events</h3><p>Regattas, races, festivals and markets through the year.</p><div class="links"><a class="chip" href="events.html">What's on</a></div></div>
+</div></div></section>
 
-<section id="videos" class="alt">
-  <h2>Videos</h2>
-  <p class="lead">Regattas, festivals and waterfront life. Watch right here; more tiles link to YouTube, and the last tile hosts your own clip.</p>
-  <div class="grid">
-    <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/CP9txn4FmhA" title="Festival of Sails 2026" loading="lazy" allowfullscreen allow="accelerometer; encrypted-media; picture-in-picture"></iframe><div class="t"><h3>Festival of Sails 2026</h3><span class="tag">Sailing</span></div></div>
-    <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/cgQExTYq_f4" title="Geelong by drone – top attractions" loading="lazy" allowfullscreen allow="accelerometer; encrypted-media; picture-in-picture"></iframe><div class="t"><h3>Geelong by drone – top attractions</h3><span class="tag">Scenery</span></div></div>
-    <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/RoI6gjyBdmY" title="Eastern Beach, Geelong" loading="lazy" allowfullscreen allow="accelerometer; encrypted-media; picture-in-picture"></iframe><div class="t"><h3>Eastern Beach, Geelong</h3><span class="tag">Things to do</span></div></div>
-    <div class="video"><a class="thumb" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Cadel+Evans+Great+Ocean+Road+Race+Geelong">▶</a><div class="t"><h3>Cadel Evans Great Ocean Road Race</h3><span class="tag">Events</span></div></div>
-    <div class="video"><a class="thumb" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Geelong+Carousel+Baywalk+Bollards">▶</a><div class="t"><h3>Carousel &amp; Baywalk Bollards</h3><span class="tag">Things to do</span></div></div>
-    <div class="video">
-      <!-- Set src to your own file, e.g. videos/regatta.mp4 -->
-      <video controls preload="none" src=""></video>
-      <div class="t"><h3>Your video here</h3><span class="tag">Upload</span></div>
-    </div>
-  </div>
-</section>
+<section class="dark"><div class="wrap"><div class="stats reveal">
+<div><b>5+</b><span>sailing clubs on the bay</span></div><div><b>Year-round</b><span>racing programs</span></div><div><b>~1 hr</b><span>from Melbourne by train</span></div><div><b>260+</b><span>boats at Festival of Sails</span></div>
+</div></div></section>
 
-<section id="events">
-  <h2>Events</h2>
-  <p class="lead">Typical highlights on the waterfront calendar (confirm current dates with organisers).</p>
-  <ul class="cal">
-    <li><b>January</b><span>Geelong Week regatta – Australia's oldest annual regatta on Corio Bay.</span></li>
-    <li><b>Summer</b><span>Twilight racing, outdoor cinema and live music on the foreshore.</span></li>
-    <li><b>Summer</b><span>Cadel Evans Great Ocean Road Race finishes in Geelong.</span></li>
-    <li><b>Spring</b><span>Markets and community festivals along the Esplanade.</span></li>
-    <li><b>Year-round</b><span>Food trucks, festivals and sailing club open days.</span></li>
-  </ul>
-</section>
+<section class="alt"><div class="wrap">
+<h2 class="reveal">Watch the action</h2>
+<p class="lead reveal">A taste of the bay. More on the videos page.</p>
+<div class="grid two">
+<div class="video reveal"><iframe src="https://www.youtube-nocookie.com/embed/CP9txn4FmhA" title="Festival of Sails 2026" loading="lazy" allowfullscreen allow="accelerometer; encrypted-media; picture-in-picture"></iframe><div class="t"><h3>Festival of Sails 2026</h3><p>Racing and celebrations on Corio Bay.</p></div></div>
+<div class="video reveal"><iframe src="https://www.youtube-nocookie.com/embed/cgQExTYq_f4" title="Geelong by drone" loading="lazy" allowfullscreen allow="accelerometer; encrypted-media; picture-in-picture"></iframe><div class="t"><h3>Geelong by drone</h3><p>Top attractions and landmarks from above.</p></div></div>
+</div>
+<p style="margin-top:1.8rem"><a class="btn o" href="videos.html">All videos</a></p>
+</div></section>
 
-<section id="todo" class="alt">
-  <h2>More Great Things to Do</h2>
-  <div class="grid" style="margin-top:1.5rem">
-    <div class="card"><div class="ic">🎠</div><h3>Carousel</h3><p>Ride the heritage carousel at Steampacket Gardens.</p></div>
-    <div class="card"><div class="ic">🗿</div><h3>Baywalk Bollards</h3><p>Follow Jan Mitchell's colourful painted bollards along the foreshore.</p></div>
-    <div class="card"><div class="ic">🏊</div><h3>Eastern Beach</h3><p>Swim at the art-deco beach, promenade and sea baths.</p></div>
-    <div class="card"><div class="ic">🍽️</div><h3>Dine by the Bay</h3><p>Waterfront cafés, bars and seafood just off the pier.</p></div>
-    <div class="card"><div class="ic">🚴</div><h3>Walk &amp; Cycle</h3><p>Flat, scenic paths run along the bay foreshore.</p></div>
-    <div class="card"><div class="ic">🎡</div><h3>Family Fun</h3><p>Playgrounds, mini golf and Cunningham Pier lookouts.</p></div>
-  </div>
-</section>
-
-<section id="visit">
-  <h2>Plan Your Visit</h2>
-  <p class="lead">Geelong is about an hour from Melbourne by train (V/Line to Geelong Station, a short walk to the waterfront) or by car via the M1. Parking is available along the Esplanade and Eastern Beach Road.</p>
-  <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/Geelong+Waterfront">Open in Maps</a>
-</section>
-
-<footer>
-  <p>⛵ Geelong Waterfront – unofficial community guide. Details change; see <a href="https://www.visitgeelongbellarine.com.au" target="_blank" rel="noopener">Visit Geelong &amp; the Bellarine</a>.</p>
-</footer>
-</body>
-</html>
+<section class="cta-band"><div class="wrap reveal"><h2>Ready to get out on the water?</h2><p>Check a club calendar, pick a race day and come down to the foreshore.</p><div class="btns"><a class="btn p" href="clubs.html">Club calendars</a><a class="btn g" href="events.html">What's on</a></div></div></section>
+</main>
+<footer><div class="wrap">
+<div class="cols">
+<div><h4>Geelong Waterfront</h4><p>An unofficial guide to sailing, events and things to do on Corio Bay.</p></div>
+<div><h4>Explore</h4><a href="sailing.html">Sailing</a><a href="clubs.html">Clubs &amp; Calendars</a><a href="videos.html">Videos</a><a href="events.html">Events</a><a href="explore.html">Things to Do</a></div>
+<div><h4>Official links</h4><a href="https://rgyc.com.au/" target="_blank" rel="noopener">Royal Geelong Yacht Club</a><a href="https://festivalofsails.com.au/" target="_blank" rel="noopener">Festival of Sails</a><a href="https://www.visitgeelongbellarine.com.au" target="_blank" rel="noopener">Visit Geelong &amp; Bellarine</a></div>
+</div>
+<p class="fine">Not affiliated with any club or council. Dates and details change, so confirm with the organiser before you go.</p>
+</div></footer>
+<script src="assets/site.js"></script>
+</body></html>
